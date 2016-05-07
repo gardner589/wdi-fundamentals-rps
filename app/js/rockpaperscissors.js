@@ -5,7 +5,7 @@
 
 function getInput() {
     console.log("Please choose either 'rock', 'paper', or 'scissors'.")
-    return prompt();
+    return prompt("Please choose either 'rock', 'paper', or 'scissors'.").toLowerCase();
 }
 function randomPlay() {
     var randomNumber = Math.random();
@@ -72,6 +72,7 @@ function getWinner(playerMove,computerMove) {
             winner = "player";
         }
     }
+
     return winner;
 }
 
@@ -81,6 +82,7 @@ function playToFive() {
     var computerWins = 0;
     // Write code that plays 'Rock, Paper, Scissors' until either the player or the computer has won five times.
     /* YOUR CODE HERE */
+
     return [playerWins, computerWins];
 }
 
