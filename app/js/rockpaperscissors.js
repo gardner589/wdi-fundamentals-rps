@@ -5,7 +5,7 @@
 
 function getInput() {
     console.log("Please choose either 'rock', 'paper', or 'scissors'.")
-    return prompt("Please choose either 'rock', 'paper', or 'scissors'.").toLowerCase();
+    prompt().toLowerCase();
 }
 function randomPlay() {
     var randomNumber = Math.random();
